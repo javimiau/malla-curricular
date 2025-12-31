@@ -1,0 +1,16 @@
+[
+    {
+        "codigo": "220143",
+        "nombre": "Álgebra y Trigonometría",
+        "creditos": 8,
+        "area": "Ciencias Básicas",
+        "semestre": 1
+    },
+    {
+        "codigo": "620432",
+        "nombre": "Introducción a la Ingeniería",
+        "creditos": 6,
+        "area": "Ciencias de la Ingeniería",
+        "semestre": 1
+    }
+]
