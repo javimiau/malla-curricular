@@ -7,10 +7,134 @@
         "semestre": 1
     },
     {
+        "codigo": "620431",
+        "nombre": "Introducción a la Programación",
+        "creditos": 9,
+        "area":"Ingeniería de Software y Base de Datos",
+        "semestre": 1
+    },
+    {
         "codigo": "620432",
         "nombre": "Introducción a la Ingeniería",
         "creditos": 6,
         "area": "Ciencias de la Ingeniería",
         "semestre": 1
+    },
+    {
+        "codigo": "340266",
+        "nombre": "Comunicación Oral y Escrita",
+        "creditos": 4,
+        "area": "Formación Integral Profesional",
+        "semestre": 1
+    },
+    {
+        "codigo": "340556-A",
+        "nombre": "Formación Integral Oferta Institucional",
+        "creditos": 2,
+        "area": "Formación Integral Oferta Institucional",
+        "semestre": 1
+    },
+    {
+        "codigo": "220144",
+        "nombre": "Cálculo Diferencial",
+        "creditos": 6,
+        "area": "Ciencias Básicas",
+        "semestre": 2,
+        "prerrequisitos": [
+            "220143"
+        ]
+    },
+    {
+        "codigo": "210020",
+        "nombre": "Química General",
+        "creditos": 8,
+        "area": "Ciencias Básicas",
+        "semestre": 2
+    },
+    {
+        "codigo": "620433",
+        "nombre": "Programación Orientada a Objetos",
+        "creditos": 8,
+        "area": "Ingeniería de Software y Base de Datos",
+        "semestre": 2,
+        "prerrequisitos": [
+            "620431"
+        ]
+    },
+    {
+        "codigo": "620434",
+        "nombre": "Estructuras Discretas Para Ciencias de la Computación",
+        "creditos": 5,
+        "area": "Ingeniería de Software y Base de Datos",
+        "semestre": 2
+    },
+    {
+        "codigo": "340556-B",
+        "nombre": "Formación Integral Oferta Institucional",
+        "creditos": 2,
+        "area": "Formación Integral Oferta Institucional",
+        "semestre": 2
+    },
+    {
+        "codigo": "340557",
+        "nombre": "Formación Integral Oferta Institucional",
+        "creditos": 2,
+        "area": "Formación Integral Oferta Institucional",
+        "semestre": 2
+    },
+    {
+        "codigo": "220145",
+        "nombre": "Álgrebra Lineal",
+        "creditos": 5,
+        "area": "Ciencias Básicas",
+        "semestre": 3,
+        "prerrequisitos": [
+            "220143"
+        ]
+    },
+    {
+        "codigo": "220146",
+        "nombre": "Cálculo Integral",
+        "creditos": 6,
+        "area": "Ciencias Básicas",
+        "semestre": 3,
+        "prerrequisitos": [
+            "220144"
+        ]
+    },
+    {
+        "codigo": "230033",
+        "nombre": "Física Newtoniana",
+        "creditos": 6,
+        "area": "Ciencias Básicas",
+        "semestre": 3,
+        "prerrequisitos": [
+            "220144"
+        ]
+    },
+    {
+        "codigo": "620435",
+        "nombre": "Estructuras de Datos",
+        "creditos": 6,
+        "area": "Ingeniería de Software y Base de Datos",
+        "semestre": 3,
+        "prerrequisitos": [
+            "620433",
+            "620434"
+        ]
+    },
+    {
+        "codigo": "610227",
+        "nombre": "Administración General",
+        "creditos": 3,
+        "area": "Gestión de Informática",
+        "semestre": 3
+    },
+    {
+        "codigo": "340276",
+        "nombre": "Inglés I",
+        "creditos": 4,
+        "area": "Formación Integral Profesional",
+        "semestre": 3
     }
 ]
