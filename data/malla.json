@@ -479,9 +479,7 @@
         "creditos": 5,
         "area": "Una de las áreas anteriores",
         "semestre": 9,
-        "prerrequisitos": [
-            "Según el electivo"
-        ]
+        "prerrequisitos": []
     },
     {
         "codigo": "620470",
@@ -489,9 +487,7 @@
         "creditos": 5,
         "area": "Una de las áreas anteriores",
         "semestre": 9,
-        "prerrequisitos": [
-            "Según el electivo"
-        ]
+        "prerrequisitos": []
     },
     {
         "codigo": "620471",
@@ -499,9 +495,7 @@
         "creditos": 5,
         "area": "Una de las áreas anteriores",
         "semestre": 9,
-        "prerrequisitos": [
-            "Según el electivo"
-        ]
+        "prerrequisitos": []
     },
     {
         "codigo": "620472",
@@ -525,9 +519,7 @@
         "creditos": 5,
         "area": "Una de las áreas anteriores",
         "semestre": 10,
-        "prerrequisitos": [
-            "Según el electivo"
-        ]
+        "prerrequisitos": []
     },
     {
         "codigo": "620475",
@@ -535,9 +527,7 @@
         "creditos": 5,
         "area": "Una de las áreas anteriores",
         "semestre": 10,
-        "prerrequisitos": [
-            "Según el electivo"
-        ]
+        "prerrequisitos": []
     },
     {
         "codigo": "620476",
@@ -545,9 +535,7 @@
         "creditos": 5,
         "area": "Una de las áreas anteriores",
         "semestre": 10,
-        "prerrequisitos": [
-            "Según el electivo"
-        ]
+        "prerrequisitos": []
     },
     {
         "codigo": "620477",
