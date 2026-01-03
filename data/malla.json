@@ -84,7 +84,7 @@
     },
     {
         "codigo": "220145",
-        "nombre": "Álgrebra Lineal",
+        "nombre": "Álgebra Lineal",
         "creditos": 5,
         "area": "Ciencias Básicas",
         "semestre": 3,
@@ -136,5 +136,425 @@
         "creditos": 4,
         "area": "Formación Integral Profesional",
         "semestre": 3
+    },
+    {
+        "codigo": "220147",
+        "nombre": "Ecuaciones Diferenciales",
+        "creditos": 5,
+        "area": "Ciencias Básicas",
+        "semestre": 4,
+        "prerrequisitos": [
+            "220145",
+            "220146"
+        ]
+    },
+    {
+        "codigo": "230034",
+        "nombre": "Electromagnetismo",
+        "creditos": 6,
+        "area":"Ciencias de la Ingeniería",
+        "semestre": 4,
+        "prerrequisitos": [
+            "230033"
+        ]
+    },
+    {
+        "codigo": "220148",
+        "nombre": "Cálculo en Varias Variables",
+        "creditos": 6,
+        "area": "Ciencias Básicas",
+        "semestre": 4,
+        "prerrequisitos": [
+            "220146"
+        ]
+    },
+    {
+        "codigo": "620436",
+        "nombre": "Modelamiento de Procesos e Información",
+        "creditos": 7,
+        "area": "Ingeniería de Software y Base de Datos",
+        "semestre": 4
+    },
+    {
+        "codigo": "340277",
+        "nombre": "Inglés II",
+        "creditos": 4,
+        "area": "Formación Integral Profesional",
+        "semestre": 4,
+        "prerrequisitos": [
+            "340276"
+        ]
+    },
+    {
+        "codigo": "340556-C",
+        "nombre": "Formación Integral Oferta Institucional",
+        "creditos": 2,
+        "area": "Formación Integral Oferta Institucional",
+        "semestre": 4
+    },
+    {
+        "codigo": "620437",
+        "nombre": "Fundamentos de Ciencias de la Computación",
+        "creditos": 6,
+        "area": "Ingeniería de Software y Base de Datos",
+        "semestre": 5,
+        "prerrequisitos": [
+            "620435"
+        ]
+    },
+    {
+        "codigo": "230035",
+        "nombre": "Ondas, Óptica y Física Moderna",
+        "creditos": 6,
+        "area":"Ciencias de la Ingeniería",
+        "semestre": 5,
+        "prerrequisitos": [
+            "220147",
+            "230034"
+        ]
+    },
+    {
+        "codigo": "620438",
+        "nombre": "Teoría de Sistemas",
+        "creditos": 4,
+        "area": "Ciencias de la Ingeniería",
+        "semestre": 5,
+        "prerrequisitos": [
+            "220146"
+        ]
+    },
+    {
+        "codigo": "610228",
+        "nombre": "Gestión Contable",
+        "creditos": 4,
+        "area": "Gestión de Informática",
+        "semestre": 5,
+        "prerrequisitos": [
+            "610227"
+        ]
+    },
+    {
+        "codigo": "410268",
+        "nombre": "Sistemas Digitales",
+        "creditos": 5,
+        "area": "Ciencias de la Ingeniería",
+        "semestre": 5,
+        "prerrequisitos": [
+            "230034"
+        ]
+    },
+    {
+        "codigo": "340278",
+        "nombre": "Inglés III",
+        "creditos": 4,
+        "area": "Formación Integral Profesional",
+        "semestre": 5,
+        "prerrequisitos": [
+            "340277"
+        ]
+    },
+    {
+        "codigo": "620439",
+        "nombre": "Base de Datos",
+        "creditos": 6,
+        "area": "Ingeniería de Software y Base de Datos",
+        "semestre": 6,
+        "prerrequisitos": [
+            "620436",
+            "620435",
+            "220146"
+        ]
+    },
+    {
+        "codigo": "220149",
+        "nombre": "Estadística y Probabilidades",
+        "creditos": 6,
+        "area": "Ciencias Básicas",
+        "semestre": 6,
+        "prerrequisitos": [
+            "220146"
+        ]
+    },
+    {
+        "codigo": "620448",
+        "nombre": "Análisis y Diseño de Algoritmos",
+        "creditos": 5,
+        "area": "Ingeniería de Software y Base de Datos",
+        "semestre": 6,
+        "prerrequisitos": [
+            "620437"
+        ]
+    },
+    {
+        "codigo": "340279",
+        "nombre": "Inglés IV",
+        "creditos": 4,
+        "area": "Formación Integral Profesional",
+        "semestre": 6,
+        "prerrequisitos": [
+            "340278"
+        ]
+    },
+    {
+        "codigo": "611049",
+        "nombre": "Economía",
+        "creditos": 4,
+        "area": "Gestión de Informática",
+        "semestre": 6,
+        "prerrequisitos": [
+            "220146"
+        ]
+    },
+    {
+        "codigo": "620449",
+        "nombre": "Práctica Profesional I",
+        "creditos": 6,
+        "area": "Una de las áreas anteriores",
+        "semestre": 6,
+        "prerrequisitos": [
+            "620437"
+        ]
+    },
+    {
+        "codigo": "430183",
+        "nombre": "Investigación de Operaciones",
+        "creditos": 4,
+        "area": "Ciencias de la Ingeniería",
+        "semestre": 7,
+        "prerrequisitos": [
+            "220149"
+        ]
+    },
+    {
+        "codigo": "620450",
+        "nombre": "Arquitectura de Computadores",
+        "creditos": 6,
+        "area": "Sistemas Computacionales",
+        "semestre": 7,
+        "prerrequisitos": [
+            "410268"
+        ]
+    },
+    {
+        "codigo": "620451",
+        "nombre": "Administración y Programación de Base de Datos",
+        "creditos": 6,
+        "area": "Ingeniería de Software y Base de Datos",
+        "semestre": 7,
+        "prerrequisitos": [
+            "620439"
+        ]
+    },
+    {
+        "codigo": "620452",
+        "nombre": "Sistemas de Información",
+        "creditos": 4,
+        "area": "Gestión de Informática",
+        "semestre": 7,
+        "prerrequisitos": [
+            "620438"
+        ]
+    },
+    {
+        "codigo": "610229",
+        "nombre": "Gestión Presupuestaria y Financiera",
+        "creditos": 4,
+        "area": "Gestión de Informática",
+        "semestre": 7,
+        "prerrequisitos": [
+            "610228"
+        ]
+    },
+    {
+        "codigo": "612239",
+        "nombre": "Gestión Estratégica",
+        "creditos": 3,
+        "area": "Gestión de Informática",
+        "semestre": 7,
+        "prerrequisitos": [
+            "610227"
+        ]
+    },
+    {
+        "codigo": "340556-D",
+        "nombre": "Formación Integral Oferta Institucional",
+        "creditos": 2,
+        "area": "Formación Integral Oferta Institucional",
+        "semestre": 7
+    },
+    {
+        "codigo": "620453",
+        "nombre": "Sistemas Operativos",
+        "creditos": 6,
+        "area": "Sistemas Computacionales",
+        "semestre": 8,
+        "prerrequisitos": [
+            "620450",
+            "620448"
+        ]
+    },
+    {
+        "codigo": "620454",
+        "nombre": "Inteligencia Artificial",
+        "creditos": 4,
+        "area": "Ingeniería de Software y Base de Datos",
+        "semestre": 8,
+        "prerrequisitos": [
+            "620448"
+        ]
+    },
+    {
+        "codigo": "620455",
+        "nombre": "Ingeniería de Software",
+        "creditos": 5,
+        "area": "Ingeniería de Software y Base de Datos",
+        "semestre": 8,
+        "prerrequisitos": [
+            "620439"
+        ]
+    },
+    {
+        "codigo": "611050",
+        "nombre": "Formulación y Evaluación de Proyectos",
+        "creditos": 4,
+        "area": "Gestión de Informática",
+        "semestre": 8,
+        "prerrequisitos": [
+            "610229",
+            "612239"
+        ]
+    },
+    {
+        "codigo": "613017",
+        "nombre": "Legislación",
+        "creditos": 3,
+        "area": "Gestión de Informática",
+        "semestre": 8,
+        "creditos_necesarios": 180
+    },
+    {
+        "codigo": "620456",
+        "nombre": "Práctica Profesional II",
+        "creditos": 9,
+        "area": "Una de las áreas anteriores",
+        "semestre": 8,
+        "prerrequisitos": [
+            "620451"
+        ]
+    },
+    {
+        "codigo": "620457",
+        "nombre": "Comunicación de Datos y Redes",
+        "creditos": 5,
+        "area": "Sistemas Computacionales",
+        "semestre": 9,
+        "prerrequisitos": [
+            "230035",
+            "620453"
+        ]
+    },
+    {
+        "codigo": "620458",
+        "nombre": "Gestión de Proyectos de Software",
+        "creditos": 4,
+        "area": "Ingeniería de Software y Base de Datos",
+        "semestre": 9,
+        "prerrequisitos": [
+            "620455"
+        ]
+    },
+    {
+        "codigo": "610231",
+        "nombre": "Gestión de Recursos Humanos",
+        "creditos": 3,
+        "area": "Gestión de Informática",
+        "semestre": 9,
+        "prerrequisitos": [
+            "612239"
+        ]
+    },
+    {
+        "codigo": "620459",
+        "nombre": "Electivo Profesional I",
+        "creditos": 5,
+        "area": "Una de las áreas anteriores",
+        "semestre": 9,
+        "prerrequisitos": [
+            "Según el electivo"
+        ]
+    },
+    {
+        "codigo": "620470",
+        "nombre": "Electivo Profesional II",
+        "creditos": 5,
+        "area": "Una de las áreas anteriores",
+        "semestre": 9,
+        "prerrequisitos": [
+            "Según el electivo"
+        ]
+    },
+    {
+        "codigo": "620471",
+        "nombre": "Electivo Profesional III",
+        "creditos": 5,
+        "area": "Una de las áreas anteriores",
+        "semestre": 9,
+        "prerrequisitos": [
+            "Según el electivo"
+        ]
+    },
+    {
+        "codigo": "620472",
+        "nombre": "Anteproyecto de Título",
+        "creditos": 4,
+        "area": "Una de las áreas anteriores",
+        "semestre": 9,
+        "creditos_necesarios": 240
+    },
+    {
+        "codigo": "620473",
+        "nombre": "Seguridad Informática",
+        "creditos": 4,
+        "area": "Ingeniería de Software y Base de Datos",
+        "semestre": 10,
+        "creditos_necesarios":240
+    },
+    {
+        "codigo": "620474",
+        "nombre": "Electivo Profesional IV",
+        "creditos": 5,
+        "area": "Una de las áreas anteriores",
+        "semestre": 10,
+        "prerrequisitos": [
+            "Según el electivo"
+        ]
+    },
+    {
+        "codigo": "620475",
+        "nombre": "Electivo Profesional V",
+        "creditos": 5,
+        "area": "Una de las áreas anteriores",
+        "semestre": 10,
+        "prerrequisitos": [
+            "Según el electivo"
+        ]
+    },
+    {
+        "codigo": "620476",
+        "nombre": "Electivo Profesional VI",
+        "creditos": 5,
+        "area": "Una de las áreas anteriores",
+        "semestre": 10,
+        "prerrequisitos": [
+            "Según el electivo"
+        ]
+    },
+    {
+        "codigo": "620477",
+        "nombre": "Proyecto de Título",
+        "creditos": 10,
+        "area": "Una de las áreas anteriores",
+        "semestre": 10,
+        "creditos_necesarios": 240
     }
 ]

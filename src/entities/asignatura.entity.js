@@ -4,13 +4,14 @@
 
 export class Asignatura {
   constructor(
-    codigo, 
+    codigo,
     nombre,
     creditos,
     area, // ciencias, matematicas, ingenieria, etc
     semestre,
     estado = "Pendiente", //por defecto es pendiente
-    prerrequisitos = [] //lo que se debe cumplir para tomar la asignatura
+    prerrequisitos = [], //lo que se debe cumplir para tomar la asignatura
+    creditos_necesarios = 0 //creditos aprobados en la asignatura
   ) {
     this.codigo = codigo;
     this.nombre = nombre;
@@ -19,21 +20,18 @@ export class Asignatura {
     this.semestre = semestre;
     this.prerrequisitos = prerrequisitos;
     this.estado = estado;
+    this.creditos_necesarios = creditos_necesarios;
   }
 
   aprobar() {
-    this.estado = 'Aprobada'; //se usa solo 1 = porque a this.estado se le asigna 'Aprobada'
-};
+    this.estado = "Aprobada"; //se usa solo 1 = porque a this.estado se le asigna 'Aprobada'
+  }
 
-esDeArea(nombreArea) {
+  esDeArea(nombreArea) {
     return this.area === nombreArea;
-};
+  }
 
-esDeSemestre(nroSemestre) {
+  esDeSemestre(nroSemestre) {
     return this.semestre === nroSemestre;
+  }
 }
-
-};
-
-
-
