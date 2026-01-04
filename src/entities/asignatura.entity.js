@@ -2,6 +2,15 @@
  *  Entidad para una asignatura de la malla curricular
  */
 
+export const ESTADOS = {
+  APROBADA: "aprobada",
+  PENDIENTE: "pendiente",
+  REPROBADA: "reprobada",
+  RENUNCIADA: "renunciada",
+  NCR: "ncr",
+  INSCRITA: "inscrita"
+};
+
 export class Asignatura {
   constructor(
     codigo,
@@ -9,7 +18,7 @@ export class Asignatura {
     creditos,
     area, // ciencias, matematicas, ingenieria, etc
     semestre,
-    estado = "Pendiente", //por defecto es pendiente
+    estado = ESTADOS.PENDIENTE, //por defecto es pendiente
     prerrequisitos = [], //lo que se debe cumplir para tomar la asignatura
     creditos_necesarios = 0 //creditos aprobados en la asignatura
   ) {
@@ -24,7 +33,15 @@ export class Asignatura {
   }
 
   aprobar() {
-    this.estado = "Aprobada"; //se usa solo 1 = porque a this.estado se le asigna 'Aprobada'
+    this.estado = ESTADOS.APROBADA; //se usa solo 1 = porque a this.estado se le asigna 'Aprobada'
+  }
+
+  reprobar() {
+    this.estado = ESTADOS.REPROBADA;
+  }
+
+  bloquear() {
+    this.estado = ESTADOS.NCR;
   }
 
   esDeArea(nombreArea) {
