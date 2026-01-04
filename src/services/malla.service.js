@@ -2,7 +2,7 @@
  * Servicio para gestionar las operaciones relacionadas con la malla curricular.
  */
 import { Asignatura, ESTADOS } from "../entities/asignatura.entity.js";
-import data from "../data/malla.json" with { type: "json" };
+import data from "../../data/malla.json" with { type: "json" };
 
 export class MallaService {
   constructor() {

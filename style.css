@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+    --fondo: #f7f9f7; /* Verde menta muy clarito */
+    --verde-primario: #4d9a61;
+    --texto: #4a3f5a;
+    --blanco-card: #f1c8e1;
+    --rosa-txt: #ff85b9;
+    --fuente-principal: 'Montserrat', sans-serif; /* Fuente más tierna */
+    
+    /* Estados */
+    --bg-aprobada: #c6f6d5;
+    --txt-aprobada: #2c7a7b;
+    --bg-pendiente: #f3e8ff;
+    --txt-pendiente: #8a76ab;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--fondo);
+    /* Fondo con estrellas sutiles (Estilo Y2K) */
+    background-image: url('https://bettysgraphics.neocities.org/bg/bg_stars1.gif');
+    margin: 0;
+    padding: 5px 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: url('https://cur.cursors-4u.net/symbols/sym-1/sym49.gif'), auto !important;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h1 { 
+    font-size: 1.1rem;
+    color: var(--verde-primario); 
+    margin: 5px 0 0 0;
+}
+
+.sub-header {
+    font-size: 0.8rem;
+    color: var(--verde-primario);
+    margin: 0 0 5px 0;
+}
+
+#stats-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.creditos-pill {
+    background: white;
+    padding: 2px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    color: var(--verde-primario);
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* GRID DE 10 COLUMNAS */
+#malla-vertical {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 4px;
+    height: calc(100vh - 90px); 
+    padding: 5px;
+}
+
+.semestre-seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: 4px;
+    border: 1px solid rgba(77, 154, 97, 0.1);
+}
+
+.semestre-seccion h2 {
+    font-size: 0.6rem;
+    text-align: center;
+    margin: 2px 0;
+    color: var(--verde-primario);
+    text-transform: uppercase;
+}
+
+/* TARJETAS MINI */
+.card-asignatura {
+    background: var(--blanco-card);
+    border-radius: 5px;
+    padding: 4px 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border-left: 4px solid #ddd; /* Color por defecto */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    min-height: 45px;
+    justify-content: space-between;
+    transition: transform 0.1s;
+}
+
+.card-asignatura:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px rgba(255, 133, 185, 0.3);
+}
+
+.info-materia strong {
+    font-size: 0.55rem;
+    line-height: 1.1;
+    display: block;
+    color: var(--texto);
+}
+
+.info-materia small {
+    font-size: 0.48rem;
+    color: #8a76ab;
+}
+
+/* COLORES DE ÁREAS (Mapeo exacto del main.js) */
+
+/* Ciencias Básicas */
+[class*="area-cienciasbasica"] { border-left-color: #cd83a1 !important; }
+
+/* Ciencias de la Ingeniería */
+[class*="area-cienciasdelaingenieria"] { border-left-color: #a088d6 !important; }
+
+/* Ingeniería Aplicada */
+[class*="area-ingenieriaaplicada"] { border-left-color: #70b5cd !important; }
+
+/* Gestión y Negocios */
+[class*="area-gestion"] { border-left-color: #d8a677 !important; }
+
+/* Formación Integral */
+[class*="area-formacionintegral"] { border-left-color: #7ec5b9 !important; }
+
+/* Idiomas / Inglés */
+[class*="area-idioma"], [class*="area-ingles"] { border-left-color: #b54f98 !important; }
+
+/* Electivos y Título */
+[class*="area-electivo"], [class*="area-proyecto"], [class*="area-anteproyecto"] { border-left-color: #e3dd89 !important; }
+
+.area-electivoprofesionali, 
+.area-electivoprofesionalii, 
+.area-electivoprofesionaliii,
+.area-proyectodetitulo, 
+.area-anteproyectodetitulo { border-left-color: #e3dd89 !important; }
+
+/* --- COLORES PARA RAMOS FALTANTES --- */
+
+/* Color para Base de Datos e Ingeniería de Software (Ingeniería Aplicada) */
+[class*="basededatos"], 
+[class*="ingenieriadesoftware"],
+[class*="sistemasdeinformacion"] { 
+    border-left-color: #70b5cd !important; 
+}
+
+/* Por si acaso, para los ramos de Redes y Seguridad */
+[class*="comunicaciondedatosyredes"],
+[class*="seguridadinformatica"] {
+    border-left-color: #70b5cd !important;
+}
+
+/* Para los ramos de Sistemas Operativos y Arquitectura */
+[class*="sistemasoperativos"],
+[class*="arquitecturadecomputadores"] {
+    border-left-color: #a088d6 !important;
+}
+
+/* BADGES */
+.badge {
+    font-size: 0.42rem;
+    padding: 1px 4px;
+    border-radius: 3px;
+    align-self: flex-end;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.badge-pendiente { background: var(--bg-pendiente); color: var(--txt-pendiente); }
+.badge-aprobada { background: var(--bg-aprobada); color: var(--txt-aprobada); border: 1px solid var(--txt-aprobada); }
