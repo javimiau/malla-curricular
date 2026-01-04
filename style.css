@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+    --fondo: #f0f4f6;
+    --verde-primario: #4d9a61;
+    --verde-soft: #6fb583;
+    --rosa-soft: #d97aa6;
+    --rosa-suave: #ff85b9;
+    --texto: #2e2929;
+    --texto-oscuro: #1a1a1a;
+    --card-bg: rgba(247, 245, 245, 0.95);
+    --fuente-principal: 'Montserrat', sans-serif;
+    
+    --bg-aprobada: #c6f6d5;
+    --txt-aprobada: #2c7a7b;
+    --bg-pendiente: #f3e8ff;
+    --txt-pendiente: #8a76ab;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Patrón de estrellas sutil */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(1px 1px at 20% 30%, rgba(111, 181, 131, 0.4), transparent),
+        radial-gradient(1px 1px at 60% 70%, rgba(217, 122, 166, 0.4), transparent),
+        radial-gradient(1px 1px at 50% 50%, rgba(77, 154, 97, 0.3), transparent),
+        radial-gradient(1px 1px at 80% 10%, rgba(255, 133, 185, 0.3), transparent),
+        radial-gradient(1px 1px at 90% 60%, rgba(111, 181, 131, 0.3), transparent),
+        radial-gradient(1px 1px at 33% 80%, rgba(217, 122, 166, 0.3), transparent),
+        radial-gradient(1px 1px at 15% 60%, rgba(77, 154, 97, 0.35), transparent),
+        radial-gradient(1px 1px at 70% 40%, rgba(255, 133, 185, 0.35), transparent);
+    background-size: 250% 250%;
+    animation: stars-float 25s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes stars-float {
+    0%, 100% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+}
+
+header {
+    background: linear-gradient(135deg, 
+        rgba(77, 154, 97, 0.85) 0%, 
+        rgba(217, 122, 166, 0.85) 100%);
+    padding: 12px 20px;
+    text-align: center;
+    border-bottom: 2px solid rgba(111, 181, 131, 0.6);
+    box-shadow: 
+        0 0 15px rgba(111, 181, 131, 0.3),
+        0 4px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+h1 { 
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 
+        0 0 8px rgba(111, 181, 131, 0.6),
+        2px 2px 0 rgba(217, 122, 166, 0.5);
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.sub-header {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 5px rgba(111, 181, 131, 0.5);
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+
+/* Stats bar */
+#stats-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+    position: relative;
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+.creditos-pill {
+    background: linear-gradient(135deg, var(--verde-primario), var(--rosa-soft));
+    padding: 6px 18px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 700;
+    box-shadow: 
+        0 0 12px rgba(111, 181, 131, 0.35),
+        0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
+/* Grid de la malla */
+#malla-vertical {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 4px;
+    padding: 8px 10px;
+    position: relative;
+    z-index: 10;
+    flex: 1;
+    overflow: hidden;
+    max-height: calc(100vh - 120px);
+    width: 100%;
+}
+
+.semestre-seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    padding: 4px;
+    border: 1px solid rgba(111, 181, 131, 0.25);
+    box-shadow: 
+        0 0 8px rgba(77, 154, 97, 0.15),
+        0 2px 8px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    min-width: 0;
+}
+
+.semestre-seccion h2 {
+    font-size: 0.6rem;
+    text-align: center;
+    margin: 0 0 3px;
+    color: var(--verde-primario);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 0 6px rgba(111, 181, 131, 0.3);
+    border: 1px solid rgba(111, 181, 131, 0.3);
+    flex-shrink: 0;
+}
+
+/* Tarjetas de asignaturas */
+.card-asignatura {
+    background: var(--card-bg);
+    border-radius: 5px;
+    padding: 4px 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    border-left: 3px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    min-height: 38px;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card-asignatura:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+        0 0 12px rgba(111, 181, 131, 0.5),
+        0 0 18px rgba(217, 122, 166, 0.3),
+        0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.info-materia strong {
+    font-size: 0.5rem;
+    line-height: 1.1;
+    display: block;
+    color: var(--texto-oscuro);
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.info-materia small {
+    font-size: 0.46rem;
+    /* Color más oscuro (Gris carbón) para mejor lectura */
+    color: #444 !important; 
+    /* Subimos el peso a 400 o 500 para que la letra no sea tan delgada */
+    font-weight: 500; 
+}
+
+/* Colores por área con glow suave */
+[class*="area-cienciasbasica"] { 
+    border-left-color: #cd83a1 !important;
+    box-shadow: 0 2px 6px rgba(205, 131, 161, 0.3);
+}
+[class*="area-cienciasbasica"]:hover {
+    box-shadow: 0 0 12px rgba(205, 131, 161, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+[class*="area-cienciasdelaingenieria"] { 
+    border-left-color: #a088d6 !important;
+    box-shadow: 0 2px 6px rgba(160, 136, 214, 0.3);
+}
+[class*="area-cienciasdelaingenieria"]:hover {
+    box-shadow: 0 0 12px rgba(160, 136, 214, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+[class*="area-ingenieriaaplicada"] { 
+    border-left-color: #70b5cd !important;
+    box-shadow: 0 2px 6px rgba(112, 181, 205, 0.3);
+}
+[class*="area-ingenieriaaplicada"]:hover {
+    box-shadow: 0 0 12px rgba(112, 181, 205, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+[class*="area-gestion"] { 
+    border-left-color: #d8a677 !important;
+    box-shadow: 0 2px 6px rgba(216, 166, 119, 0.3);
+}
+[class*="area-gestion"]:hover {
+    box-shadow: 0 0 12px rgba(216, 166, 119, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+[class*="area-formacionintegral"] { 
+    border-left-color: #7ec5b9 !important;
+    box-shadow: 0 2px 6px rgba(126, 197, 185, 0.3);
+}
+[class*="area-formacionintegral"]:hover {
+    box-shadow: 0 0 12px rgba(126, 197, 185, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+[class*="area-idioma"], [class*="area-ingles"] { 
+    border-left-color: #b54f98 !important;
+    box-shadow: 0 2px 6px rgba(181, 79, 152, 0.3);
+}
+[class*="area-idioma"]:hover, [class*="area-ingles"]:hover {
+    box-shadow: 0 0 12px rgba(181, 79, 152, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+[class*="area-electivo"], [class*="area-proyecto"], [class*="area-anteproyecto"] { 
+    border-left-color: #e3dd89 !important;
+    box-shadow: 0 2px 6px rgba(227, 221, 137, 0.3);
+}
+[class*="area-electivo"]:hover, [class*="area-proyecto"]:hover, [class*="area-anteproyecto"]:hover {
+    box-shadow: 0 0 12px rgba(227, 221, 137, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Badges */
+.badge {
+    font-size: 0.4rem;
+    padding: 2px 5px;
+    border-radius: 6px;
+    align-self: flex-end;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+.badge-pendiente { 
+    background: var(--bg-pendiente);
+    color: var(--txt-pendiente);
+    border: 1px solid var(--txt-pendiente);
+}
+
+.badge-aprobada { 
+    background: var(--bg-aprobada);
+    color: var(--txt-aprobada);
+    border: 1px solid var(--txt-aprobada);
+}
+
+/* Responsive - mantiene todo visible */
+@media (min-width: 1920px) {
+    #malla-vertical {
+        gap: 6px;
+    }
+    
+    .card-asignatura {
+        min-height: 45px;
+        padding: 6px 8px;
+    }
+    
+    .info-materia strong {
+        font-size: 0.55rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    h1 {
+        font-size: 1rem;
+    }
+    
+    .info-materia strong {
+        font-size: 0.48rem;
+    }
+    
+    .card-asignatura {
+        min-height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    #malla-vertical {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    h1 {
+        font-size: 0.9rem;
+    }
+}
+
+.card-aprobada {
+    box-shadow: 0 0 15px rgba(77, 154, 97, 0.5) !important;
+    border: 1px solid var(--verde-primario) !important;
+    background-color: rgb(237, 218, 218) !important; /* Un fondo levemente más verde */
+}
