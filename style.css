@@ -8,7 +8,7 @@
     --rosa-suave: #ff85b9;
     --texto: #2e2929;
     --texto-oscuro: #1a1a1a;
-    --card-bg: rgba(247, 245, 245, 0.95);
+    --card-bg: rgba(248, 233, 233, 0.95);
     --fuente-principal: 'Montserrat', sans-serif;
     
     --bg-aprobada: #c6f6d5;
@@ -200,72 +200,59 @@ h1 {
     display: block;
     color: var(--texto-oscuro);
     font-weight: 600;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 }
 
 .info-materia small {
-    font-size: 0.46rem;
-    /* Color más oscuro (Gris carbón) para mejor lectura */
-    color: #444 !important; 
-    /* Subimos el peso a 400 o 500 para que la letra no sea tan delgada */
-    font-weight: 500; 
+    font-size: 0.48rem;
+    color: #555 !important; /* Gris oscuro para contraste */
+    font-weight: 600; 
+    display: block;
+    margin-top: 7px;
 }
 
 /* Colores por área con glow suave */
-[class*="area-cienciasbasica"] { 
+
+/* Ciencias Básicas */
+[class*="basica"] { 
     border-left-color: #cd83a1 !important;
     box-shadow: 0 2px 6px rgba(205, 131, 161, 0.3);
 }
-[class*="area-cienciasbasica"]:hover {
-    box-shadow: 0 0 12px rgba(205, 131, 161, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
-}
 
-[class*="area-cienciasdelaingenieria"] { 
+/* Ciencias de la Computación / Ingeniería */
+[class*="computacion"], [class*="ingenieria"] { 
     border-left-color: #a088d6 !important;
     box-shadow: 0 2px 6px rgba(160, 136, 214, 0.3);
 }
-[class*="area-cienciasdelaingenieria"]:hover {
-    box-shadow: 0 0 12px rgba(160, 136, 214, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
-}
 
-[class*="area-ingenieriaaplicada"] { 
+/* Ingeniería Aplicada */
+[class*="aplicada"] { 
     border-left-color: #70b5cd !important;
     box-shadow: 0 2px 6px rgba(112, 181, 205, 0.3);
 }
-[class*="area-ingenieriaaplicada"]:hover {
-    box-shadow: 0 0 12px rgba(112, 181, 205, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
-}
 
-[class*="area-gestion"] { 
+/* Gestión y Economía */
+[class*="gestion"], [class*="economia"], [class*="contable"] { 
     border-left-color: #d8a677 !important;
     box-shadow: 0 2px 6px rgba(216, 166, 119, 0.3);
 }
-[class*="area-gestion"]:hover {
-    box-shadow: 0 0 12px rgba(216, 166, 119, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
-}
 
-[class*="area-formacionintegral"] { 
+/* Formación Integral */
+[class*="formacionintegral"], [class*="comunicacion"] { 
     border-left-color: #7ec5b9 !important;
     box-shadow: 0 2px 6px rgba(126, 197, 185, 0.3);
 }
-[class*="area-formacionintegral"]:hover {
-    box-shadow: 0 0 12px rgba(126, 197, 185, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
-}
 
-[class*="area-idioma"], [class*="area-ingles"] { 
+/* Idiomas */
+[class*="idioma"], [class*="ingles"] { 
     border-left-color: #b54f98 !important;
     box-shadow: 0 2px 6px rgba(181, 79, 152, 0.3);
 }
-[class*="area-idioma"]:hover, [class*="area-ingles"]:hover {
-    box-shadow: 0 0 12px rgba(181, 79, 152, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
-}
 
-[class*="area-electivo"], [class*="area-proyecto"], [class*="area-anteproyecto"] { 
+/* Proyectos y Títulos */
+[class*="electivo"], [class*="proyecto"], [class*="anteproyecto"], [class*="titulo"] { 
     border-left-color: #e3dd89 !important;
     box-shadow: 0 2px 6px rgba(227, 221, 137, 0.3);
-}
-[class*="area-electivo"]:hover, [class*="area-proyecto"]:hover, [class*="area-anteproyecto"]:hover {
-    box-shadow: 0 0 12px rgba(227, 221, 137, 0.6), 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Badges */
@@ -332,7 +319,8 @@ h1 {
 }
 
 .card-aprobada {
-    box-shadow: 0 0 15px rgba(77, 154, 97, 0.5) !important;
+    box-shadow: 0 0 15px rgba(77, 154, 97, 0.4) !important;
     border: 1px solid var(--verde-primario) !important;
-    background-color: rgb(237, 218, 218) !important; /* Un fondo levemente más verde */
+    background-color: #e6fffa !important; /* Verde menta muy claro */
+    transition: background-color 0.4s ease;
 }
