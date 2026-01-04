@@ -24,12 +24,16 @@ function renderizarMalla() {
         asignaturas.forEach(asig => {
             const card = document.createElement('div');
 
-            // Dentro de asignaturas.forEach(asig => { ... })
+            // Limpieza de área para el color CSS
             const areaLimpia = asig.area.toLowerCase()
                 .normalize("NFD").replace(/[\u0300-\u036f]/g, "") 
-                .replace(/\s+/g, ''); // Solo quitamos espacios y tildes
+                .replace(/\s+/g, ''); 
 
-            card.className = `card-asignatura area-${areaLimpia}`;
+            // DETERMINAR ESTADO VISUAL
+            const esAprobada = asig.estado.toLowerCase() === 'aprobada';
+            
+            // Añadimos la clase 'card-aprobada' para el brillo (glow) si está aprobada
+            card.className = `card-asignatura area-${areaLimpia} ${esAprobada ? 'card-aprobada' : ''}`;
             
             card.innerHTML = `
                 <div class="info-materia">
@@ -40,13 +44,14 @@ function renderizarMalla() {
             `;
 
             card.onclick = () => {
-                if (asig.estado.toLowerCase() === 'aprobada') return;
-
+                // Quitamos el 'return' que había aquí para que permita desmarcar
                 const resultado = service.aprobarAsignatura(asig.codigo);
                 
+                // Si el servicio devuelve un texto, es un error de requisitos (créditos o pre-requisitos)
                 if (typeof resultado === 'string') {
                     alert(`⚠️ ${resultado}`);
                 } else {
+                    // Si todo sale bien, actualizamos la lógica y refrescamos la pantalla
                     service.actualizarMalla();
                     renderizarMalla();
                 }
